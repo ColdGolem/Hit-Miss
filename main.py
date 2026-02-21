@@ -13,7 +13,7 @@ clock = pygame.time.Clock()
 # ────────────────────────────────────────────────
 # Margin settings – increase margin_top for more distance from top of screen
 margin_side   = 40          # left + right symmetric margin
-margin_top    = 180         # ← higher = more space above the box (e.g. 200–300)
+margin_top    = 600         # ← higher = more space above the box (e.g. 200–300)
 margin_bottom = 60          # bottom margin
 
 # Aesthetic colors
@@ -71,7 +71,7 @@ async def main():
     vy = speed * golden
 
     # Title rects (updated on resize)
-    title_rect = title_surf.get_rect(center=(WIDTH // 2, 50))        # near top
+    title_rect = title_surf.get_rect(center=(WIDTH // 2, 400))        # near top
     shadow_rect = title_rect.move(4, 4)
 
     # Faint underline/glow line
